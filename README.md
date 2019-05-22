@@ -18,13 +18,14 @@ This is my First Project in Java
  * Add Email-Id and Password (this is used when user clicks forgot password,a mail is sent to user email-id from added email)
  * Local Server address and port number assigned can be changed (if required)
 3. In DBConnection.java file(under Database package) userName and password (default "root" and "") can be setup
- 
+4. Extract db.rar and copy db to your mysql database
+5. Extract lib.rar and upload this jar files to Netbeans Libraries
  ## How To Run
  1. Run Server.java file (under Services Package)
  2. RUn LoginFrame.java file (under Presentation Layer Package)
  3. Enter Credetianls by default admin username is **cgc** and password is **cgc**
  
  ## Other Details
- 1. DB name is db located under database folder
- 2. All Jar Files are in Lib folder
+ 1. DB name is db and present in db.rar
+ 2. All Jar Files are present in lib.rar
  
