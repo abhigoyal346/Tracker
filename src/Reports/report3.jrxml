@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="800" pageHeight="842" columnWidth="680" leftMargin="20" rightMargin="100" topMargin="20" bottomMargin="20" uuid="3c51b109-cc96-49e0-ad2d-ab6052cdaf38">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="708"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     loginmaster.`LoginId` AS loginmaster_LoginId,
+     loginmaster.`username` AS loginmaster_username,
+     loginmaster.`status` AS loginmaster_status,
+     loginmaster.`email` AS loginmaster_email,
+     loginmaster.`type` AS loginmaster_type,
+     loginmaster.`name` AS loginmaster_name,
+     loginmaster.`dob` AS loginmaster_dob,
+     loginmaster.`contact` AS loginmaster_contact,
+     loginmaster.`gender` AS loginmaster_gender
+FROM
+     `loginmaster` loginmaster]]>
+	</queryString>
+	<field name="loginmaster_LoginId" class="java.lang.Integer"/>
+	<field name="loginmaster_username" class="java.lang.String"/>
+	<field name="loginmaster_status" class="java.lang.Boolean"/>
+	<field name="loginmaster_email" class="java.lang.String"/>
+	<field name="loginmaster_type" class="java.lang.String"/>
+	<field name="loginmaster_name" class="java.lang.String"/>
+	<field name="loginmaster_dob" class="java.sql.Date"/>
+	<field name="loginmaster_contact" class="java.lang.String"/>
+	<field name="loginmaster_gender" class="java.lang.Boolean"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="700" height="92" backcolor="#006699" uuid="3a228c45-051b-4dc9-8d45-f6169f0cb0fc"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="8a3c2d77-ff9f-4348-b69a-6e2c295b5531"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[User Report]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="520" y="72" width="180" height="20" forecolor="#FFFFFF" uuid="fbb87ed4-6780-48cc-a04f-e375061a00f9"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[All Users Report]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="17"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="700" height="1" forecolor="#666666" uuid="a921bdeb-20e3-4836-b9d0-830d44cae1a1"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="74" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="b1baa713-d772-46a4-8945-f3d5126024b4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LoginId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="74" y="0" width="81" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="ea8c2b4a-05a9-4bdb-b2ff-358e382f7c7e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UserName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="155" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="a6bcae44-44ca-4811-ad8d-d0c102e20207"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="234" y="0" width="83" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="91635f9b-3616-4898-b84d-8299c1897fa3"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="317" y="0" width="91" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="36fab075-2ede-4f04-848c-ef969272bcdb"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="408" y="0" width="80" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="8b36b0ff-754b-42d7-975a-69e533a587f8"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="488" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="26778f33-f2b1-4361-9654-200027e7fd04"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[D.O.B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="549" y="0" width="80" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="9d99660a-4258-4901-a843-51b529303f89"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="629" y="0" width="51" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="b1fedcde-ba93-4efd-b28d-3a2648c9846e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="680" height="1" uuid="a58a480f-1a2e-45b3-be3f-f6c8f8909bac"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="74" height="20" uuid="a5b1f932-4b0e-4f98-8489-980488287e86"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loginmaster_LoginId}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="169" y="0" width="65" height="20" uuid="f7d2b9d1-41b4-475b-8fa5-d071aad13559"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loginmaster_status}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="427" y="0" width="61" height="20" uuid="295739e7-cf39-494c-aad2-54ba0549991f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loginmaster_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="">
+				<reportElement x="629" y="0" width="51" height="20" uuid="ace5c52d-8853-409b-9052-7bd8c52c8c4a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loginmaster_gender}]]></textFieldExpression>
+				<patternExpression><![CDATA[value == true ? "pippo" : "pluto"]]></patternExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yy">
+				<reportElement x="488" y="0" width="61" height="20" uuid="976c9b97-34ca-49cb-82ac-bb889c3e2d5f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loginmaster_dob}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="549" y="0" width="80" height="20" uuid="4caa028e-618c-4709-ac52-fe8950aece3c"/>
+				<box>
+					<pen lineStyle="Solid"/>
+					<topPen lineStyle="Solid"/>
+					<leftPen lineStyle="Solid"/>
+					<bottomPen lineStyle="Solid"/>
+					<rightPen lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loginmaster_contact}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="345" y="0" width="82" height="20" uuid="5276d59e-c267-47ad-bb22-850eb7fdda99"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loginmaster_type}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="234" y="0" width="111" height="20" uuid="83e87cb2-9072-44b7-8979-c5d43b5e6987"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loginmaster_email}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="74" y="0" width="87" height="20" uuid="63f3553f-0c9b-456d-b5f2-eb2a2c5a297c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loginmaster_username}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="640" height="13" backcolor="#E6E6E6" uuid="377a67ee-df35-41c7-a50a-8e079f2eb01f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="640" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="a98e13ea-eef0-4c06-87da-92ba36ee9b8c"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="f9324064-2f52-4701-92e0-f8abef52be1f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
